@@ -70,7 +70,7 @@ auth:
   ## ref: https://airflow.readthedocs.io/en/stable/howto/secure-connections.html
   ## ref: https://bcb.github.io/airflow/fernet-key
   ##
-  fernetKey: zg_-TJMTOLVzLJ6WKOy-T4gW7Ty0eDw98yyeGCsUgkQ=
+  fernetKey: ""
   ## @param auth.secretKey Secret key to run your flask app
   ## ref: https://airflow.apache.org/docs/apache-airflow/stable/configurations-ref.html#secret-key
   ##
@@ -182,7 +182,7 @@ web:
   image:
     registry: docker.io
     repository: bitnami/airflow
-    tag: 2.3.3-debian-11-r0
+    tag: 2.3.3-debian-11-r3
     ## Specify a imagePullPolicy
     ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     ## ref: https://kubernetes.io/docs/user-guide/images/#pre-pulling-images
@@ -438,7 +438,7 @@ scheduler:
   image:
     registry: docker.io
     repository: bitnami/airflow-scheduler
-    tag: 2.3.3-debian-11-r0
+    tag: 2.3.3-debian-11-r3
     ## Specify a imagePullPolicy
     ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     ## ref: https://kubernetes.io/docs/user-guide/images/#pre-pulling-images
@@ -640,7 +640,7 @@ worker:
   image:
     registry: docker.io
     repository: bitnami/airflow-worker
-    tag: 2.3.3-debian-11-r0
+    tag: 2.3.3-debian-11-r3
     ## Specify a imagePullPolicy
     ## Defaults to 'Always' if image tag is 'latest', else set to 'IfNotPresent'
     ## ref: https://kubernetes.io/docs/user-guide/images/#pre-pulling-images
