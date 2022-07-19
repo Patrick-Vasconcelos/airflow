@@ -947,7 +947,7 @@ git:
         branch: main
         ## An unique identifier for repository, must be unique for each repository
         ##
-        name: airflow
+        name: github
         ## Path to a folder in the repository containing the dags
         ##
         path: ""
