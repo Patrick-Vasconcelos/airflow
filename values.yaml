@@ -70,7 +70,7 @@ auth:
   ## ref: https://airflow.readthedocs.io/en/stable/howto/secure-connections.html
   ## ref: https://bcb.github.io/airflow/fernet-key
   ##
-  fernetKey: ""
+  fernetKey: zg_-TJMTOLVzLJ6WKOy-T4gW7Ty0eDw98yyeGCsUgkQ=
   ## @param auth.secretKey Secret key to run your flask app
   ## ref: https://airflow.apache.org/docs/apache-airflow/stable/configurations-ref.html#secret-key
   ##
@@ -947,7 +947,7 @@ git:
         branch: main
         ## An unique identifier for repository, must be unique for each repository
         ##
-        name: Dags
+        name: airflow
         ## Path to a folder in the repository containing the dags
         ##
         path: ""
@@ -1131,7 +1131,7 @@ ingress:
   apiVersion: ""
   ## @param ingress.hostname Default host for the ingress record
   ##
-  hostname: airflow.local
+  hostname: airflow.localhost.com
   ## @param ingress.path Default path for the ingress record
   ## NOTE: You may need to set this to '/*' in order to use this with ALB ingress controllers
   ##
@@ -1461,7 +1461,7 @@ postgresql:
   auth:
     enablePostgresUser: false
     username: bn_airflow
-    password: ""
+    password: kcirtap
     database: bitnami_airflow
     existingSecret: ""
   architecture: standalone
@@ -1480,7 +1480,7 @@ externalDatabase:
   port: 5432
   user: bn_airflow
   database: bitnami_airflow
-  password: ""
+  password: kcirtap
   existingSecret: ""
   existingSecretPasswordKey: ""
 
@@ -1500,7 +1500,7 @@ redis:
     ## It should always be set using the password value or in the existingSecret to avoid issues
     ## with Airflow.
     ## The password value is ignored if existingSecret is set
-    password: ""
+    password: kcirtap
     existingSecret: ""
   architecture: standalone
 
@@ -1518,7 +1518,7 @@ externalRedis:
   port: 6379
   ## Most Redis&reg; implementations do not require a username
   ## to authenticate and it should be enough with the password
-  username: ""
-  password: ""
+  username: airflow
+  password: kcirtap
   existingSecret: ""
   existingSecretPasswordKey: ""
